@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/gym_background.jpg);
+    background-color: #dfe9f5; /*In case image fails to load*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+
+width: 250px;
+padding: 2rem 1rem;
+margin: 50px auto;
+background-color: rgba(255,255,255, 0.6); 
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+color: #07001f;
+
+}
+
+.database-instructions{
+
+margin-bottom: 7px;
+padding: 3px;
+color: #07001f;
+font-weight: 400;
+border: 1px #7b6060 solid;
+border-radius: 5px;
+background-color: #ffd2d27d;
+
+}
+
+.highlight{
+
+    color: #A3152D;
+}
+
+button {
+    width: 93%;
+    background-color: rgb(17, 107, 143);
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    margin-top: 10px;
+}
+
+input{
+
+    width: 90%;
+    
+    height: 25px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    margin: 5px
+}
+
+
+button:hover{
+
+    background-color: rgba(17, 107, 143, 0.8);
+}
+
+a {
+    color: rgb (17, 107, 143);
+    text-decoration: none;
+}
+a:visited{
+
+    color: rgb(17, 107, 143);
+}
+
+.input{
+    display: block;
+}
+
+input:focus{
+
+    outline: 1px solid rgb(17, 107, 143);
+
+}
+
+.label{
+    text-align: left;
+    display: block;
+    margin: 0px 10px
+}
+
+.container a:hover{
+
+    text-decoration: underline;
+}
