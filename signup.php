@@ -35,12 +35,13 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sign Up</title>
+  <title>Sign Up</title>
     <link rel="stylesheet" href="style_login.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Sign Up</h1>
+
+      <h1 class="title">Sign Up</h1>
       
       <form method="post">
         <label class="label">Username</label>

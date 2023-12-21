@@ -1,74 +1,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
-   
 }
 
-.navbar{
-
-height: 9vh;
-
+#main-container {
+    height: 91vh;
 }
 
-#side_nav{
+.navbar {
+    height: 9vh;
+}
 
+.navLogoutBtn{
+    color: red !important;
+}
+
+#side_nav {
     background-color: black;
     height: 91vh;
     width: 39vh;
 }
 
-
 .btn-dark {
-
-width: 90%;
-
+    width: 90%;
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
 }
 
-.links{
-
-display: flex;
-flex-direction: column;
-align-items: center;
-
-margin: 20px 0x;
-padding: 20px;
-
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
 }
 
-.link{
-
-    margin-top: 20px;
+.link {
+    margin-top: 2rem;
 }
 
-.sidebar_text{
+#side_nav {
+    min-width: 246px;
+}
 
+.sidebar_text {
     text-align: center;
     padding-top: 20px;
 }
 
-
 .sidebar_logout_container{
     display: flex;
     justify-content: center;
-    margin-top: 150px;
-
+    padding: 0 0.5rem;
 }
+
 
 .sidebar_logout{
-
-
     width: 90%;
+    margin-top: 5rem;
+    color: rgb(201, 0, 0) !important;
 }
 
-.title_container{
-margin-top: 3vh;
-    
+.title_container {
+    margin-top: 3vh;
 }
-.article{
 
+.article {
     flex: 1;
+}
+
+ul {
+    margin-top: 3rem;
+}
+
+.card.pb-5 {
+    min-width: 13rem;
+    height: 15.625rem;
+}
+
+.td-action{
+
+    min-width: 123px;
+    max-height: 48px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #side_nav {
+
+
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .list-unstyled{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    li.btn.btn-dark.link {
+
+        width: 200px;
+        margin: 1rem;
+    }
+
+    .sidebar_logout{
+
+        display: none;
+    }
+
+    #main-container {
+        height: 81vh;
+    }
+
+    .header-box{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #side_nav {
+
+
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .list-unstyled{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    li.btn.btn-dark.link {
+
+        width: 200px;
+        margin: 1rem;
+    }
+
+    .sidebar_logout{
+
+        display: none;
+    }
+
+    #main-container {
+        height: 81vh;
+    }
+
+    .header-box{
+        display: none;
+    }
+   
+    #cards-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card.pb-5 {
+        margin: 1rem 0;
+        height: 13.75rem;
+        width: 13.75rem;
+    }
+
+
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 2px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #side_nav {
+
+
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .list-unstyled{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    li.btn.btn-dark.link {
+
+        width: 100px;
+        margin: 1rem;
+    }
+
+    .sidebar_logout{
+
+        display: none;
+    }
+
+    #main-container {
+        height: 81vh;
+    }
+
+    .header-box{
+        display: none;
+    }
+
+    #cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card.pb-5 {
+        margin: 1rem 0;
+        height: 13.75rem;
+        width: 13.75rem;
+    }
+
+    .article{
+        overflow-x: scroll;
+    }
 }

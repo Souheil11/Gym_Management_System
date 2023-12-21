@@ -22,7 +22,7 @@ if(mysqli_num_rows($query_run) > 0) {
       <td><?= $user['last_name']; ?></td>
       <td><?= $user['email']; ?></td>
       <td>
-        <form action="" method="POST" class="d-inline">
+        <form class="td-action" action="" method="POST" class="d-inline">
           <a href="edit_user.php?id=<?= $user['id']; ?>" class="btn btn-success btn-sm">Edit</a>
           <button type="submit" name="delete_user" value="<?= $user['id']; ?>" class="btn btn-danger btn-sm">Delete</button>
         </form>
